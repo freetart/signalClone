@@ -1,5 +1,6 @@
 // variables
 $main-color: #9dbbf8;
+$secondary-color: #3c3743;
 
 // globals
 body {
@@ -95,5 +96,26 @@ body {
 @media (max-width: 768px) {
   .info {
     order: -1;
+  }
+}
+
+// footer
+.footer {
+  background-color: $secondary-color;
+
+  &-links {
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin: 0.5rem 0;
+    }
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
