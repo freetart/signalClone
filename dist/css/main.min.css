@@ -1,2 +1,2 @@
-.navbar img{width:10rem}.navbar .nav-link{font-size:1.3rem}
+body{overflow-x:hidden}.navbar img{width:10rem}.navbar .nav-link{font-size:1.3rem}.hero{background-color:#9dbbf8;padding:10rem 2rem}.hero-paragraph{font-size:1.6rem}.hero-phones{position:relative}.hero-phones .hero-phone-1,.hero-phones .hero-phone-2{width:50%;position:absolute;transform:rotate(25deg);right:10%}@media (max-width: 1025px){.hero-phones .hero-phone-1,.hero-phones .hero-phone-2{width:40%}}.hero-phones .hero-phone-2{top:10%;right:50%}
 /*# sourceMappingURL=main.min.css.map */

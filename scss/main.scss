@@ -1,6 +1,11 @@
 // variables
 $main-color: #9dbbf8;
 
+// globals
+body {
+  overflow-x: hidden;
+}
+
 // nav
 .navbar {
   img {
@@ -9,5 +14,36 @@ $main-color: #9dbbf8;
 
   .nav-link {
     font-size: 1.3rem;
+  }
+}
+
+// hero
+.hero {
+  background-color: $main-color;
+  padding: 10rem 2rem;
+
+  &-paragraph {
+    font-size: 1.6rem;
+  }
+
+  &-phones {
+    position: relative;
+
+    .hero-phone-1 {
+      width: 50%;
+      position: absolute;
+      transform: rotate(25deg);
+      right: 10%;
+
+      @media (max-width: 1025px) {
+        width: 40%;
+      }
+    }
+
+    .hero-phone-2 {
+      @extend .hero-phone-1;
+      top: 10%;
+      right: 50%;
+    }
   }
 }
