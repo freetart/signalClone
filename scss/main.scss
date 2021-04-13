@@ -84,10 +84,16 @@ body {
 }
 
 // features cards
-
 .features-cards {
   .features-card-img {
     width: 50%;
     margin: 0 auto;
+  }
+}
+
+// non profit
+@media (max-width: 768px) {
+  .info {
+    order: -1;
   }
 }
