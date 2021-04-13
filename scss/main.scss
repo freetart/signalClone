@@ -8,6 +8,8 @@ body {
 
 // nav
 .navbar {
+  border-bottom: 0.2rem solid $main-color;
+
   img {
     width: 10rem;
   }
@@ -78,5 +80,14 @@ body {
       width: 5rem;
       border-radius: 50%;
     }
+  }
+}
+
+// features cards
+
+.features-cards {
+  .features-card-img {
+    width: 50%;
+    margin: 0 auto;
   }
 }
