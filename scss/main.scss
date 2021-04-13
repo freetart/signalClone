@@ -22,6 +22,10 @@ body {
   background-color: $main-color;
   padding: 10rem 2rem;
 
+  @media (max-width: 992px) {
+    padding: 10rem 2rem 5rem 2rem;
+  }
+
   &-paragraph {
     font-size: 1.6rem;
   }
@@ -35,8 +39,9 @@ body {
       transform: rotate(25deg);
       right: 10%;
 
-      @media (max-width: 1025px) {
-        width: 40%;
+      @media (max-width: 768px) {
+        width: 35%;
+        right: 20%;
       }
     }
 
@@ -44,6 +49,34 @@ body {
       @extend .hero-phone-1;
       top: 10%;
       right: 50%;
+
+      @media (max-width: 768px) {
+        right: 40%;
+      }
+    }
+  }
+}
+
+// testimonials
+.testimonials {
+  padding: 10rem 2rem;
+
+  @media (max-width: 768px) {
+    padding: 20rem 2rem 10rem 2rem;
+  }
+
+  @media (max-width: 400px) {
+    padding: 10rem 2rem;
+  }
+
+  @media (min-width: 1400px) {
+    padding: 20rem 2rem 10rem 2rem;
+  }
+
+  .testimonial {
+    .testimonial-img {
+      width: 5rem;
+      border-radius: 50%;
     }
   }
 }
