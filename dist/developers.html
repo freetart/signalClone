@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon/koala.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Signal Clone | Download</title>
+  </head>
+  <body>
+    <!-- preloader -->
+    <div class="preloader">
+      <img
+        src="./images/home/signal-logo.png"
+        class="preloader-img img-fluid"
+        alt="signal logo"
+      />
+    </div>
+
+    <!-- nav -->
+    <nav
+      class="navbar navbar-expand-md navbar-light fixed-top bg-white p-2"
+      id="main-nav"
+    >
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="./images/home/signal-logo.png"
+            alt="signal logo"
+            class="img-fluid"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarCollapse"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="download.html" class="nav-link m-2">Get Signal</a>
+            </li>
+            <li class="nav-item">
+              <a href="support.html" class="nav-link m-2">Support</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link m-2">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="developers.html" class="nav-link m-2 active"
+                >Developers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link m-2">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- developers hero -->
+    <header class="developers-hero bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5">
+            <h1 class="display-2">Technical information</h1>
+            <p class="lead">
+              Specifications and software libraries for developers
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./images/developers/developers-hero.png"
+              alt="developers hero"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- specs -->
+      <section class="specs py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto mb-5">
+              <div class="specs-title text-center">
+                <h2 class="display-4">Specifications</h2>
+                <p class="lead">
+                  Encryption in messaging environments integrates many ideas
+                  which often need to be composed separately in different
+                  applications. We make an effort to break out ideas into
+                  independent specifications so that they can be integrated as
+                  appropriate for different projects.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-5">
+              <a href="#!" class="display-6 text-decoration-none">
+                XEdDSA and VXEdDSA
+              </a>
+              <p class="lead">
+                This document describes how to create and verify
+                EdDSA-compatible signatures using public key and private key
+                formats initially defined for the X25519 and X448 elliptic curve
+                Diffie-Hellman functions. This document also describes "VXEdDSA"
+                which extends XEdDSA to make it a verifiable random function, or
+                VRF.
+              </p>
+            </div>
+            <div class="col-md-6 mb-5">
+              <a href="#!" class="display-6 text-decoration-none">
+                Double Ratchet
+              </a>
+              <p class="lead">
+                This document describes the Double Ratchet algorithm, which is
+                used by two parties to exchange encrypted messages based on a
+                shared secret key. The parties derive new keys for every Double
+                Ratchet message so that earlier keys cannot be calculated from
+                later ones. The parties also send Diffie-Hellman public values
+                attached to their messages. The results of Diffie-Hellman
+                calculations are mixed into the derived keys so that later keys
+                cannot be calculated from earlier ones. These properties give
+                some protection to earlier or later encrypted messages in case
+                of a compromise of a party's keys.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-5">
+              <a href="#!" class="display-6 text-decoration-none"> X3DH </a>
+              <p class="lead">
+                This document describes the "X3DH" (or "Extended Triple
+                Diffie-Hellman") key agreement protocol. X3DH establishes a
+                shared secret key between two parties who mutually authenticate
+                each other based on public keys. X3DH provides forward secrecy
+                and cryptographic deniability.
+              </p>
+            </div>
+            <div class="col-md-6 mb-5">
+              <a href="#!" class="display-6 text-decoration-none"> Sesame </a>
+              <p class="lead">
+                This document describes the Sesame algorithm for managing
+                message encryption sessions in an asynchronous and multi-device
+                setting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- software libraries -->
+      <section class="software-libraries py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="display-6">Software libraries</h2>
+              <a href="#!" class="text-decoration-none lead d-block">
+                Signal Protocol Java library
+              </a>
+              <a href="#!" class="text-decoration-none lead d-block">
+                Signal Protocol C library
+              </a>
+              <a href="#!" class="text-decoration-none lead d-block">
+                Signal Protocol JavaScript library
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer py-5 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <p>
+              Website based on Signal's official site. Coded by habibdev
+              (╯°□°）╯︵ ┻━┻
+            </p>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="#!" class="text-white">Donate</a></li>
+              <li><a href="#!" class="text-white">Careers</a></li>
+              <li><a href="#!" class="text-white">Blog</a></li>
+              <li><a href="#!" class="text-white">Terms & Privacy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h4>Download</h4>
+            <ul class="footer-links">
+              <li><a href="#!" class="text-white">Android</a></li>
+              <li><a href="#!" class="text-white">iPhone & iPad</a></li>
+              <li><a href="#!" class="text-white">Windows</a></li>
+              <li><a href="#!" class="text-white">Mac</a></li>
+              <li><a href="#!" class="text-white">Linux</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h4>Social</h4>
+            <ul class="footer-links">
+              <li><a href="#!" class="text-white">Github</a></li>
+              <li><a href="#!" class="text-white">Twitter</a></li>
+              <li><a href="#!" class="text-white">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>Help</h4>
+            <ul class="footer-links">
+              <li><a href="#!" class="text-white">Support</a></li>
+              <li><a href="#!" class="text-white">Community</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 200, duration: 1000, once: true });
+    </script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
