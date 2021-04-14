@@ -178,8 +178,17 @@ body {
 // ********** SUPPORT PAGE **********
 .support-hero {
   padding: 10rem 2rem 5rem 2rem;
+  background-color: $main-color;
 
   &-input {
     max-width: 600px;
+  }
+}
+
+.support-card {
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
   }
 }
