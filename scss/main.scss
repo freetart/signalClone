@@ -20,12 +20,13 @@ body {
   place-items: center;
   visibility: visible;
   z-index: 2000;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
   opacity: 1;
 
   .preloader-img {
     animation: preloaderAnim 2s infinite;
     width: 15rem;
+    pointer-events: none;
   }
 }
 
@@ -196,4 +197,23 @@ body {
 .submit-request-form {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+// ********** BLOG **********
+.blogs {
+  padding: 10rem 2rem 5rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .blog {
+    position: relative;
+
+    &-img {
+      width: 5rem;
+      position: absolute;
+      top: -2rem;
+      left: -2rem;
+      border-radius: 50%;
+    }
+  }
 }
