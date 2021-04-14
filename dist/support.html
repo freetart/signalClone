@@ -175,6 +175,83 @@
           </div>
         </div>
       </section>
+
+      <!-- submit request -->
+      <section class="submit-request py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="display-2 text-center mb-5">Submit a request</h2>
+
+              <form class="submit-request-form">
+                <div class="form-group mb-4">
+                  <label for="email" class="form-label">
+                    Your email address
+                  </label>
+                  <input type="email" id="email" class="form-control" />
+                </div>
+
+                <div class="form-group mb-4">
+                  <label for="email2" class="form-label">
+                    Re-enter your email address
+                  </label>
+                  <input type="email" id="email2" class="form-control" />
+                </div>
+
+                <div class="form-group mb-4">
+                  <label for="reason" class="form-label">
+                    Tell us why you're reaching out
+                  </label>
+                  <select class="form-select">
+                    <option selected>-</option>
+                    <option value="install or update help">
+                      Install or Update help
+                    </option>
+                    <option value="registration help">Registration Help</option>
+                    <option value="payments">Payments</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group mb-4">
+                  <label for="platform" class="form-label">
+                    What playform is this for?
+                  </label>
+                  <select class="form-select">
+                    <option selected>-</option>
+                    <option value="android">Android</option>
+                    <option value="ios">iOS</option>
+                    <option value="desktop">Desktop</option>
+                  </select>
+                </div>
+
+                <div class="form-group mb-4">
+                  <label for="description" class="form-label">
+                    Description
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="description"
+                    rows="3"
+                  ></textarea>
+                  <div class="form-text">
+                    Write details about an issue or tell us feedback here.
+                  </div>
+                </div>
+
+                <div class="form-group mb-4">
+                  <label for="addfile" class="form-label"> Attachments </label>
+                  <input class="form-control form-control-lg" type="file" />
+                </div>
+
+                <a href="#!" class="btn btn-lg btn-primary mb-4"
+                  >Submit Request</a
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- footer -->
