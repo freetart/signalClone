@@ -8,6 +8,44 @@ body {
 }
 
 // ********** LAYOUT **********
+// preloader
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $main-color;
+  display: grid;
+  place-items: center;
+  visibility: visible;
+  z-index: 2000;
+  transition: 0.3s ease-in-out;
+
+  .preloader-img {
+    animation: preloaderAnim 2s infinite;
+  }
+}
+
+.hide-preloader {
+  z-index: -1000;
+  visibility: hidden;
+}
+
+@keyframes preloaderAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 // nav
 .navbar {
   border-bottom: 0.2rem solid $main-color;
