@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./images/favicon/koala.ico" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
@@ -13,7 +19,7 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Signal Clone | Developers</title>
+    <title>Signal Clone | Careers</title>
   </head>
   <body>
     <!-- preloader -->
@@ -62,32 +68,32 @@
               <a href="blog.html" class="nav-link m-2">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="developers.html" class="nav-link m-2 active"
-                >Developers</a
-              >
+              <a href="developers.html" class="nav-link m-2">Developers</a>
             </li>
             <li class="nav-item">
-              <a href="careers.html" class="nav-link m-2">Careers</a>
+              <a href="careers.html" class="nav-link m-2 active">Careers</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- developers hero -->
-    <header class="developers-hero bg-light">
+    <!-- careers hero -->
+    <header class="careers-hero text-white">
       <div class="container">
         <div class="row">
           <div class="col-md-6 mb-5">
-            <h1 class="display-2">Technical information</h1>
+            <h1 class="display-2">Work that sends a message</h1>
             <p class="lead">
-              Specifications and software libraries for developers
+              Millions of people use Signal every day to share the moments that
+              matter in their lives. Join an organization that empowers users by
+              making private communication simple.
             </p>
           </div>
           <div class="col-md-6">
             <img
-              src="./images/developers/developers-hero.png"
-              alt="developers hero"
+              src="./images/careers/careers-hero.png"
+              alt="careers hero"
               class="img-fluid"
             />
           </div>
@@ -96,95 +102,128 @@
     </header>
 
     <main>
-      <!-- specs -->
-      <section class="specs py-5">
+      <!-- benefits -->
+      <section class="benefits py-5">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto mb-5">
-              <div class="specs-title text-center">
-                <h2 class="display-4">Specifications</h2>
-                <p class="lead">
-                  Encryption in messaging environments integrates many ideas
-                  which often need to be composed separately in different
-                  applications. We make an effort to break out ideas into
-                  independent specifications so that they can be integrated as
-                  appropriate for different projects.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6 mb-5">
-              <a href="#!" class="display-6 text-decoration-none">
-                XEdDSA and VXEdDSA
-              </a>
-              <p class="lead">
-                This document describes how to create and verify
-                EdDSA-compatible signatures using public key and private key
-                formats initially defined for the X25519 and X448 elliptic curve
-                Diffie-Hellman functions. This document also describes "VXEdDSA"
-                which extends XEdDSA to make it a verifiable random function, or
-                VRF.
+            <!-- single benefit -->
+            <div class="col-md-4 text-center mb-5">
+              <i class="fas fa-user-secret fa-fw fa-3x text-primary"></i>
+              <h2>Privacy First</h2>
+              <p>
+                Small Team Have an immediate impact. Signal is an opportunity to
+                do original work and closely collaborate without the overhead of
+                endless meetings. Competitive
               </p>
             </div>
-            <div class="col-md-6 mb-5">
-              <a href="#!" class="display-6 text-decoration-none">
-                Double Ratchet
-              </a>
-              <p class="lead">
-                This document describes the Double Ratchet algorithm, which is
-                used by two parties to exchange encrypted messages based on a
-                shared secret key. The parties derive new keys for every Double
-                Ratchet message so that earlier keys cannot be calculated from
-                later ones. The parties also send Diffie-Hellman public values
-                attached to their messages. The results of Diffie-Hellman
-                calculations are mixed into the derived keys so that later keys
-                cannot be calculated from earlier ones. These properties give
-                some protection to earlier or later encrypted messages in case
-                of a compromise of a party's keys.
+
+            <!-- single benefit -->
+            <div class="col-md-4 text-center mb-5">
+              <i class="fas fa-users fa-fw fa-3x text-primary"></i>
+              <h2>Small Team</h2>
+              <p>
+                Have an immediate impact. Signal is an opportunity to do
+                original work and closely collaborate without the overhead of
+                endless meetings.
+              </p>
+            </div>
+
+            <!-- single benefit -->
+            <div class="col-md-4 text-center mb-5">
+              <i class="fas fa-search-dollar fa-fw fa-3x text-primary"></i>
+              <h2>Competitive Compensation</h2>
+              <p>
+                Healthcare premiums are fully covered for you and your family.
+                Our 401(k) plan matches 100% of your contribution up to $19,500.
               </p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-md-6 mb-5">
-              <a href="#!" class="display-6 text-decoration-none"> X3DH </a>
-              <p class="lead">
-                This document describes the "X3DH" (or "Extended Triple
-                Diffie-Hellman") key agreement protocol. X3DH establishes a
-                shared secret key between two parties who mutually authenticate
-                each other based on public keys. X3DH provides forward secrecy
-                and cryptographic deniability.
+            <!-- single benefit -->
+            <div class="col-md-4 text-center mb-5">
+              <i class="fas fa-globe fa-fw fa-3x text-primary"></i>
+              <h2>Work Remotely</h2>
+              <p>
+                Skip the commute. Work from home or take advantage of our
+                co-working space subsidy. Focus on what drives you, not driving.
               </p>
             </div>
-            <div class="col-md-6 mb-5">
-              <a href="#!" class="display-6 text-decoration-none"> Sesame </a>
-              <p class="lead">
-                This document describes the Sesame algorithm for managing
-                message encryption sessions in an asynchronous and multi-device
-                setting.
+
+            <!-- single benefit -->
+            <div class="col-md-4 text-center mb-5">
+              <i class="fas fa-code fa-fw fa-3x text-primary"></i>
+              <h2>Open Source</h2>
+              <p>
+                Everything we produce is open source. Every time we write code,
+                we get to share it with the world.
+              </p>
+            </div>
+
+            <!-- single benefit -->
+            <div class="col-md-4 text-center mb-5">
+              <i class="fas fa-star fa-fw fa-3x text-primary"></i>
+              <h2>Nonprofit</h2>
+              <p>
+                Our goal is to protect free expression and enable secure global
+                communication. We're working with users to build something
+                sustainable.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- software libraries -->
-      <section class="software-libraries py-5">
+      <!-- open roles -->
+      <section class="open-roles py-5">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
-              <h2 class="display-6">Software libraries</h2>
-              <a href="#!" class="text-decoration-none lead d-block">
-                Signal Protocol Java library
-              </a>
-              <a href="#!" class="text-decoration-none lead d-block">
-                Signal Protocol C library
-              </a>
-              <a href="#!" class="text-decoration-none lead d-block">
-                Signal Protocol JavaScript library
-              </a>
+            <div class="col">
+              <h2 class="display-3 text-center mb-5">Open Roles</h2>
+
+              <table class="table table-striped mb-5">
+                <tbody>
+                  <tr>
+                    <th scope="row">Android Engineer</th>
+                    <td>Remote (US Timezones)</td>
+                    <td>
+                      <a href="#!" class="text-decoration-none">View Role</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Desktop Engineer</th>
+                    <td>Remote (US Timezones)</td>
+                    <td>
+                      <a href="#!" class="text-decoration-none">View Role</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Distributed Systems (Rust) Engineer</th>
+                    <td>Remote (US Timezones)</td>
+                    <td>
+                      <a href="#!" class="text-decoration-none">View Role</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">iOS Engineer</th>
+                    <td>Remote (US Timezones)</td>
+                    <td>
+                      <a href="#!" class="text-decoration-none">View Role</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Server Engineer</th>
+                    <td>Remote (US Timezones)</td>
+                    <td>
+                      <a href="#!" class="text-decoration-none">View Role</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="text-center lead">
+                Sorry, we are not seeking interns at this time.
+              </p>
             </div>
           </div>
         </div>
