@@ -4,7 +4,7 @@ $secondary-color: #3c3743;
 
 // ********** GLOBALS **********
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 // ********** LAYOUT **********
@@ -149,6 +149,11 @@ body {
   }
 }
 
+// why use signal
+.why-use-signal {
+  overflow-x: hidden;
+}
+
 // features cards
 .features-cards {
   .features-card-img {
@@ -157,10 +162,19 @@ body {
   }
 }
 
+// no ads
+.no-ads {
+  overflow-x: hidden;
+}
+
 // non profit
-@media (max-width: 768px) {
-  .info {
-    order: -1;
+.non-profit {
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    .info {
+      order: -1;
+    }
   }
 }
 
@@ -220,11 +234,13 @@ body {
 
 // ********** DEVELOPERS **********
 .developers-hero {
+  overflow-x: hidden;
   padding: 10rem 2rem 5rem 2rem;
 }
 
 // ********** CAREERS **********
 .careers-hero {
+  overflow-x: hidden;
   padding: 10rem 2rem 5rem 2rem;
   background-color: $secondary-color;
 }
