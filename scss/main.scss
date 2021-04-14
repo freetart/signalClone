@@ -21,15 +21,18 @@ body {
   visibility: visible;
   z-index: 2000;
   transition: 0.3s ease-in-out;
+  opacity: 1;
 
   .preloader-img {
     animation: preloaderAnim 2s infinite;
+    width: 15rem;
   }
 }
 
 .hide-preloader {
   z-index: -1000;
   visibility: hidden;
+  opacity: 0;
 }
 
 @keyframes preloaderAnim {
@@ -169,5 +172,14 @@ body {
     background-color: $main-color;
     border-radius: 0.5rem;
     box-shadow: 0.4rem 0.4rem 1rem #f2f2f2;
+  }
+}
+
+// ********** SUPPORT PAGE **********
+.support-hero {
+  padding: 10rem 2rem 5rem 2rem;
+
+  &-input {
+    max-width: 600px;
   }
 }
