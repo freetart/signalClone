@@ -1,6 +1,8 @@
 # signalClone
 6 page website clone based on Signal's official site. features preloader for each page.
 
+- site: signalwebsiteclone.netlify.app/
+
 #### Technologies used
 - HTML5
 - SCSS
